@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru"
+  data-music="music\Kate Bush - Running Up That Hill - Official Music Video.mp3">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>С Днём рождения!</title>
+  <link rel="stylesheet" href="firework.css" />
+</head>
+<body>
+  <canvas id="fx" aria-hidden="true"></canvas>
+
+  <div class="topbar">
+    <button class="btn" id="backBtn" title="Вернуться на предыдущую страницу">← Назад</button>
+    <button class="btn" id="musicBtn" title="Включить/пауза музыки">♪ Музыка</button>
+  </div>
+
+  <!-- Оверлей с заголовком и поздравлением -->
+  <div class="overlay">
+    <!-- Заголовок: ниже, один цвет, без анимаций -->
+    <div class="title" aria-label="С Днём рождения!">
+      
+      <span class="big">С Днём рождения!</span>
+    </div>
+
+    <!-- Поздравление с анимацией печати -->
+    <div class="greeting">
+      <span id="typed" aria-live="polite"></span><span class="caret" aria-hidden="true"></span>
+    </div>
+  </div>
+
+  
+
+  <audio id="music" preload="auto" crossorigin="anonymous"></audio>
+  <script src="app.js"></script>
+</body>
+</html>

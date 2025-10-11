@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>gift</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="center">
+    <div class="btns" role="group" aria-label="Три кнопки">
+      <button class="btn-img" style="--btn-img: url('pic/1.png')"  onclick="location.href='decrypt.html'">Первая</button>
+      <button class="btn-img" style="--btn-img: url('pic/2.png')"  onclick="location.href='birthdayCake.html'">Вторая</button>
+      <button class="btn-img" style="--btn-img: url('pic/3.png')"  onclick="location.href='firework.html'">Третья</button>
+    </div>
+     <p id="music-hint" class="hint">
+      Подсказка: после перехода по <strong>третьей</strong> картинке нажми кнопку (в правом верхнем углу)
+      <strong>«Музыка»</strong>, чтобы включить звук 🎵
+    </p>
+  </main>
+
+  <script>
+    function clicked(name){
+      alert('Нажата: ' + name);
+    }
+  </script>
+</body>
+</html>
